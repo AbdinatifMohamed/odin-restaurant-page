@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Portago';
+    src: url(./assets/fonts/Portago.otf);
+}
+
+
+
+body {
+    background-color: #FFB541;
+    min-height: 100vh;
+    font-family: 'Portago', sans-serif;
+}
+
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/imgs/restaurant-bg.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.06; /* Adjust opacity here */
+    z-index: -1; /* Ensure it stays behind content */
+  }
+
+header {
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+header > h1 {
+    font-size: 3rem;
+    color:#7A252A;
+}
+
+nav > ul {
+    display: flex;
+}
+
+.nav__btn {
+    margin-right: 1.5rem;
+}
+
+.btn {
+    padding: .625rem 1.5rem;
+    font-family: 'Portago', sans-serif;
+    background-color: #7A252A;
+    color: #FFB541;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.homepage h2 {
+    font-size: 4rem;
+    color:#7A252A;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.menu > div > h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+
+.menu__foods, .menu__drinks {
+    border-radius: .625rem;
+    background-color: #7A252A;
+    height: 15rem;
+}
+
+.menu__foods {
+    width: 85%;
+}
+
+.menu__drinks {
+    width: 50%;
+}
+
+
+.foods__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drinks__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #461316;
+    height: 160px;
+    width: 130px;
+    border-radius: .625rem;
+}
+
+.item > p {
+    font-size: 1.5rem;
+}
+
+.item > p:nth-child(2) {
+    color: #fff;
+}
+
+.item > p:nth-child(3) {
+    color: #13CF0C;
+}
+
+.item > img {
+    height: 98px;
+    width: 98px;
+}
