@@ -31,6 +31,28 @@
 import "./style.css"; 
 import menuData from './menu.json' assert { type: 'json' };
 
+
+import tacosImg from './assets/imgs/foods-drinks/tacos.webp';
+import burritosImg from './assets/imgs/foods-drinks/Burritos.webp';
+import tortasImg from './assets/imgs/foods-drinks/Tortas.webp';
+import quesadillasImg from './assets/imgs/foods-drinks/Quesadillas.webp';
+import tostadasImg from './assets/imgs/foods-drinks/Tostadas.png';
+
+import jarritosImg from './assets/imgs/foods-drinks/jarritos.webp';
+import cocacolaImg from './assets/imgs/foods-drinks/cocacola.webp';
+import waterImg from './assets/imgs/foods-drinks/water.webp';
+const imageMap = {
+    "Tacos": tacosImg,
+    "Burritos": burritosImg,
+    "Tortas": tortasImg,
+    "Quesadillas": quesadillasImg,
+    "Tostadas": tostadasImg,
+    "Jarritos": jarritosImg,
+    "Coca-Cola": cocacolaImg,
+    "Water": waterImg
+};
+  
+
 const generateMenuPage = () => {
     const menu = document.createElement('div');
     menu.classList.add('menu');
@@ -61,7 +83,7 @@ const generateMenuPage = () => {
         const div = document.createElement('div');
         div.classList.add('item');
         const img = document.createElement('img');
-        img.src = menuData.foods[i].img;
+        img.src = imageMap[menuData.foods[i].name];
         const fp = document.createElement('p');
         fp.textContent = menuData.foods[i].name;
         const sp = document.createElement('p');
@@ -76,7 +98,7 @@ const generateMenuPage = () => {
         const div = document.createElement('div');
         div.classList.add('item');
         const img = document.createElement('img');
-        img.src = menuData.drinks[i].img;
+        img.src = imageMap[menuData.foods[i].name];
         const fp = document.createElement('p');
         fp.textContent = menuData.drinks[i].name;
         const sp = document.createElement('p');

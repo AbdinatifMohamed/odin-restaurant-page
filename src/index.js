@@ -19,6 +19,7 @@ homebtn.addEventListener('click', () => {
     clearContent();
     content.appendChild(generateHomePage());
 })
+
 menubtn.addEventListener('click', () => {
     clearContent();
     content.appendChild(generateMenuPage());
@@ -27,3 +28,6 @@ contactbtn.addEventListener('click', () => {
     clearContent();
     content.appendChild(generateContactPage());
 })
+clearContent();
+content.appendChild(generateHomePage());
+
