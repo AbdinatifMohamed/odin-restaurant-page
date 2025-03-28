@@ -1,0 +1,46 @@
+{
+    "foods": [
+        {
+            "name": "Tacos",
+            "price": 2,
+            "img": "/assets/imgs/foods-drinks/tacos.webp"
+        },
+        {
+            "name": "Burritos",
+            "price": 4,
+            "img": "/assets/imgs/foods-drinks/Burritos.webp"
+        },
+        {
+            "name": "Tortas",
+            "price": 5.50,
+            "img": "/assets/imgs/foods-drinks/Tortas.webp"
+        },
+        {
+            "name": "Quesadillas",
+            "price": 3.80,
+            "img": "/assets/imgs/foods-drinks/Quesadillas.webp"
+        },
+        {
+            "name": "Tostadas",
+            "price": 5.50,
+            "img": "/assets/imgs/foods-drinks/Tostadas.webp"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Jarritos",
+            "price": 2.50,
+            "img": "/assets/imgs/foods-drinks/jarritos.webp"
+        },
+        {
+            "name": "Coca-Cola",
+            "price": 2.50,
+            "img": "/assets/imgs/foods-drinks/cocacola.webp"
+        },
+        {
+            "name": "Water",
+            "price": 1.50,
+            "img": "/assets/imgs/foods-drinks/water.webp"
+        }
+    ]
+}
